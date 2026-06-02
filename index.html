@@ -1159,7 +1159,7 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
      JAVASCRIPT
 =============================================== -->
 <script>
-function showPage(pageName) {
+function showPage(pageName, push = true) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   const page = document.getElementById('page-' + pageName);
   if (page) page.classList.add('active');
@@ -1200,6 +1200,18 @@ function showPage(pageName) {
   }
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  // Keep the address bar in sync so every page has its own shareable link.
+  // Home stays clean (no hash); every other page gets a #pagename you can share.
+  if (push) {
+    var want = (pageName === 'home') ? '' : pageName;
+    if (location.hash.replace('#', '') !== want) {
+      var url = (pageName === 'home')
+        ? (location.pathname + location.search)
+        : (location.pathname + location.search + '#' + pageName);
+      history.pushState({ page: pageName }, '', url);
+    }
+  }
 }
 
 function toggleMobile() {
@@ -1219,8 +1231,17 @@ function toggleMobile() {
   }
 }
 
-// Init
-showPage('home');
+// ---- Deep linking: open the right page from the URL #hash, default to home ----
+var PAGE_NAMES = ['home','wednesdayrun','about','register','contact','sponsors','summer2026','leagues','volunteer'];
+function pageFromHash() {
+  var h = (location.hash || '').replace('#', '').toLowerCase();
+  return PAGE_NAMES.indexOf(h) !== -1 ? h : 'home';
+}
+// Honor a shared or bookmarked link on first load (without adding a history entry)
+showPage(pageFromHash(), false);
+// Make the Back/Forward buttons and manually typed #hashes work
+window.addEventListener('popstate', function () { showPage(pageFromHash(), false); });
+window.addEventListener('hashchange', function () { showPage(pageFromHash(), false); });
 
 const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwKZpnwjlYbPt6vJsDLtkL3LHj5HQErEt2kQBe6eFymR05pkvXSCapODlsH5dSC9j7u/exec";
 const VOLUNTEER_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzH-WmbnqIKhSnjMuBHOAhC4DtjNaYYCgYXqkqGY70P0kM2Ap93FNPYGmrWixAN_PCd/exec";
