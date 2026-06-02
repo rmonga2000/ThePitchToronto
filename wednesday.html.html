@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Wednesday Run — Reserve Your Spot</title>
+  <!-- Forward to the Wednesday Run page. The ?v=1 forces a fresh load so an
+       in-app browser cannot serve a stale copy; the #wednesdayrun opens the page. -->
+  <meta http-equiv="refresh" content="0; url=/?v=1#wednesdayrun">
+  <style>
+    html,body{margin:0;height:100%;background:#0D1A10;color:#F2EFE6;
+      font-family:'DM Sans',system-ui,-apple-system,sans-serif;
+      display:flex;align-items:center;justify-content:center;text-align:center;padding:24px}
+    .wrap{max-width:340px}
+    .dot{width:46px;height:46px;border-radius:50%;border:3px solid rgba(197,241,53,.25);
+      border-top-color:#C5F135;margin:0 auto 20px;animation:spin .8s linear infinite}
+    p{font-size:16px;line-height:1.5;opacity:.85;margin:0 0 14px}
+    a{color:#C5F135;font-weight:700;text-decoration:none}
+    @keyframes spin{to{transform:rotate(360deg)}}
+  </style>
+  <script>
+    // Primary redirect (runs instantly, before the meta refresh).
+    window.location.replace('/?v=1#wednesdayrun');
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="dot"></div>
+    <p>Taking you to The Wednesday Run...</p>
+    <p><a href="/?v=1#wednesdayrun">Tap here if it doesn't load automatically</a></p>
+  </div>
+</body>
+</html>
