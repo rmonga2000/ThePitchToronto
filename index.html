@@ -263,8 +263,8 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
       <h1 class="fade-up stagger-2" style="font-size:clamp(64px,12vw,130px);color:var(--chalk);margin-bottom:24px;">YOUR CITY.<br><span style="color:var(--lime);">YOUR PITCH.</span></h1>
       <p class="fade-up stagger-3" data-cms="home_hero_subtext" style="font-size:19px;max-width:460px;margin-bottom:36px;color:var(--chalk);opacity:0.85;">Open-run soccer in Scarborough, every Wednesday night. 18+, free, and all about the game. Lace up, show up, and play.</p>
       <div class="fade-up stagger-4" style="display:flex;gap:12px;flex-wrap:wrap;">
-        <button class="btn btn--lime" onclick="showPage('wednesdayrun')">Join the Wednesday Run</button>
-        <button class="btn" style="background:var(--forest);border:1.5px solid var(--forest);color:var(--chalk);" onclick="showPage('summer2026')">Youth Programs</button>
+        <button data-cms-btn-label="home_btn1_label" data-cms-btn-link="home_btn1_link" class="btn btn--lime" onclick="showPage('wednesdayrun')">Join the Wednesday Run</button>
+        <button data-cms-btn-label="home_btn2_label" data-cms-btn-link="home_btn2_link" class="btn" style="background:var(--forest);border:1.5px solid var(--forest);color:var(--chalk);" onclick="showPage('summer2026')">Youth Programs</button>
       </div>
     </div>
   </div>
@@ -284,8 +284,8 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
     <div>
       <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:0.24em;color:var(--lime);margin-bottom:20px;display:flex;align-items:center;gap:10px;"><span style="width:7px;height:7px;border-radius:50%;background:var(--lime);display:inline-block;"></span>New &#183; The Wednesday Run</div>
       <h2 style="font-family:'Syne',sans-serif;font-weight:800;text-transform:none;font-size:clamp(40px,6vw,64px);line-height:0.95;letter-spacing:-0.02em;color:var(--chalk);margin-bottom:20px;">Midweek soccer,<br><span style="color:var(--lime);">run your way.</span></h2>
-      <p style="font-size:18px;line-height:1.7;color:var(--chalk);opacity:0.6;max-width:460px;margin-bottom:32px;">An open run for ballers 18 and up, every Wednesday at Metrogolf Sportsplex. No fees, no commitment, just show up and play. This summer's first run is filling up now.</p>
-      <button class="btn btn--lime" onclick="showPage('wednesdayrun')" style="font-family:'Syne',sans-serif;font-size:14px;letter-spacing:0.08em;padding:18px 44px;">Reserve Your Spot</button>
+      <p data-cms="home_p1" style="font-size:18px;line-height:1.7;color:var(--chalk);opacity:0.6;max-width:460px;margin-bottom:32px;">An open run for ballers 18 and up, every Wednesday at Metrogolf Sportsplex. No fees, no commitment, just show up and play. This summer's first run is filling up now.</p>
+      <button data-cms-btn-label="home_btn3_label" data-cms-btn-link="home_btn3_link" class="btn btn--lime" onclick="showPage('wednesdayrun')" style="font-family:'Syne',sans-serif;font-size:14px;letter-spacing:0.08em;padding:18px 44px;">Reserve Your Spot</button>
     </div>
     <div style="display:flex;flex-direction:column;gap:0;">
       <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(197,241,53,0.18);padding:14px 0;"><span style="font-family:'Syne',sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:var(--chalk);opacity:0.45;">When</span><span style="font-family:'Syne',sans-serif;font-weight:700;font-size:17px;color:var(--chalk);">Wednesdays</span></div>
@@ -325,7 +325,7 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
     <div>
       <span class="eyebrow" style="color:var(--forest);font-size:16px;">Summer 2026 Program</span>
       <h2 style="margin-bottom:24px;">Free soccer<br>clinic.<br><span style="color:var(--forest);">Scarborough.</span></h2>
-      <p style="opacity:0.6;margin-bottom:24px;">A structured, high-quality 6-week soccer clinic designed for youth aged 18 and under in Scarborough. Professional coaching, real competition, and a community that sees you. No fees, no barriers &#8212; just the beautiful game.</p>
+      <p data-cms="home_p2" style="opacity:0.6;margin-bottom:24px;">A structured, high-quality 6-week soccer clinic designed for youth aged 18 and under in Scarborough. Professional coaching, real competition, and a community that sees you. No fees, no barriers &#8212; just the beautiful game.</p>
       <div style="display:flex;flex-direction:column;gap:20px;margin-bottom:32px;">
         <div style="display:flex;align-items:center;gap:16px;">
           <div style="width:48px;height:48px;background:var(--forest);border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
@@ -346,7 +346,7 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
           </div>
         </div>
       </div>
-      <button class="btn btn--forest" onclick="showPage('register')">Register Your Spot</button>
+      <button data-cms-btn-label="home_btn4_label" data-cms-btn-link="home_btn4_link" class="btn btn--forest" onclick="showPage('register')">Register Your Spot</button>
     </div>
     <div style="height:480px;border-radius:6px;overflow:hidden;">
       <img data-cms-src="img_feature_action" src="/images/feature-action.jpg" alt="Youth soccer" class="img-cover">
@@ -363,28 +363,28 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
   </svg>
   <div style="position:relative;z-index:1;">
     <span class="eyebrow" style="color:var(--chalk);font-size:16px;">The Experience</span>
-    <h2 style="color:var(--chalk);margin-bottom:16px;">What to expect.</h2>
-    <p style="opacity:0.45;max-width:480px;margin-bottom:56px;color:var(--chalk);">Every session is structured for growth. Here's how a typical Wednesday at The Pitch runs.</p>
+    <h2 data-cms="home_h1" style="color:var(--chalk);margin-bottom:16px;">What to expect.</h2>
+    <p data-cms="home_p3" style="opacity:0.45;max-width:480px;margin-bottom:56px;color:var(--chalk);">Every session is structured for growth. Here's how a typical Wednesday at The Pitch runs.</p>
     <div class="expect-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;">
       <div style="background:rgba(242,239,230,0.05);border:1px solid rgba(242,239,230,0.08);border-radius:6px;padding:32px 24px;">
         <div style="font-family:'Barlow Condensed';font-weight:800;font-size:40px;color:var(--lime);line-height:1;margin-bottom:12px;">01</div>
-        <h3 style="color:var(--chalk);font-size:18px;margin-bottom:8px;">Check In</h3>
-        <p style="font-size:15px;opacity:0.45;color:var(--chalk);">Arrive, gear up, check in with coach.</p>
+        <h3 data-cms="home_h3" style="color:var(--chalk);font-size:18px;margin-bottom:8px;">Check In</h3>
+        <p data-cms="home_p4" style="font-size:15px;opacity:0.45;color:var(--chalk);">Arrive, gear up, check in with coach.</p>
       </div>
       <div style="background:rgba(242,239,230,0.05);border:1px solid rgba(242,239,230,0.08);border-radius:6px;padding:32px 24px;">
         <div style="font-family:'Barlow Condensed';font-weight:800;font-size:40px;color:var(--lime);line-height:1;margin-bottom:12px;">02</div>
-        <h3 style="color:var(--chalk);font-size:18px;margin-bottom:8px;">Warm-Up & Drills</h3>
-        <p style="font-size:15px;opacity:0.45;color:var(--chalk);">Get loose, touch the ball, and sharpen your skills with our coaches.</p>
+        <h3 data-cms="home_h4" style="color:var(--chalk);font-size:18px;margin-bottom:8px;">Warm-Up & Drills</h3>
+        <p data-cms="home_p5" style="font-size:15px;opacity:0.45;color:var(--chalk);">Get loose, touch the ball, and sharpen your skills with our coaches.</p>
       </div>
       <div style="background:rgba(242,239,230,0.05);border:1px solid rgba(242,239,230,0.08);border-radius:6px;padding:32px 24px;">
         <div style="font-family:'Barlow Condensed';font-weight:800;font-size:40px;color:var(--lime);line-height:1;margin-bottom:12px;">03</div>
-        <h3 style="color:var(--chalk);font-size:18px;margin-bottom:8px;">Gametime</h3>
-        <p style="font-size:15px;opacity:0.45;color:var(--chalk);">Time to put what you've learnt to the test. Real match play, real competition.</p>
+        <h3 data-cms="home_h5" style="color:var(--chalk);font-size:18px;margin-bottom:8px;">Gametime</h3>
+        <p data-cms="home_p6" style="font-size:15px;opacity:0.45;color:var(--chalk);">Time to put what you've learnt to the test. Real match play, real competition.</p>
       </div>
       <div style="background:rgba(242,239,230,0.05);border:1px solid rgba(242,239,230,0.08);border-radius:6px;padding:32px 24px;">
         <div style="font-family:'Barlow Condensed';font-weight:800;font-size:40px;color:var(--lime);line-height:1;margin-bottom:12px;">04</div>
-        <h3 style="color:var(--chalk);font-size:18px;margin-bottom:8px;">Cool Down</h3>
-        <p style="font-size:15px;opacity:0.45;color:var(--chalk);">Recap, feedback, and community. We close every session together.</p>
+        <h3 data-cms="home_h6" style="color:var(--chalk);font-size:18px;margin-bottom:8px;">Cool Down</h3>
+        <p data-cms="home_p7" style="font-size:15px;opacity:0.45;color:var(--chalk);">Recap, feedback, and community. We close every session together.</p>
       </div>
     </div>
   </div>
@@ -394,7 +394,7 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
 <section class="section" style="padding-top:64px;padding-bottom:64px;">
   <span class="eyebrow" style="color:var(--forest);font-size:16px;">The Venue</span>
   <h2 style="margin-bottom:8px;">Metrogolf<br>Sportsplex.</h2>
-  <p style="opacity:0.5;max-width:480px;margin-bottom:20px;">Our home base in Scarborough. Indoor turf, professional facilities, easy transit access. The pitch is ready &#8212; are you?</p>
+  <p data-cms="home_p8" style="opacity:0.5;max-width:480px;margin-bottom:20px;">Our home base in Scarborough. Indoor turf, professional facilities, easy transit access. The pitch is ready &#8212; are you?</p>
   <div style="display:grid;grid-template-columns:2fr 1fr;gap:16px;">
     <div style="height:300px;border-radius:6px;overflow:hidden;">
       <img data-cms-src="img_metrogolf" src="/images/metrogolf-sportsplex.jpg" alt="Metrogolf Sportsplex" class="img-cover">
@@ -414,9 +414,9 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
   <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:32px;">
     <div>
       <h2 style="color:var(--black);margin-bottom:12px;">The Vision<br>is Bigger.</h2>
-      <p style="opacity:0.55;max-width:420px;color:var(--black);font-size:18px;">Coming Soon.</p>
+      <p data-cms="home_p9" style="opacity:0.55;max-width:420px;color:var(--black);font-size:18px;">Coming Soon.</p>
     </div>
-    <button class="btn" style="background:var(--black);color:var(--lime);" onclick="window.open('https://leagues.teamlinkt.com/thepitchtoronto','_blank')">Learn More</button>
+    <button data-cms-btn-label="home_btn5_label" data-cms-btn-link="home_btn5_link" class="btn" style="background:var(--black);color:var(--lime);" onclick="window.open('https://leagues.teamlinkt.com/thepitchtoronto','_blank')">Learn More</button>
   </div>
 </section>
 
@@ -425,9 +425,9 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
   <!-- Blurred video background simulation using image -->
   <img data-cms-src="img_cta_bg" src="/images/cta-background.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(6px) brightness(0.25);z-index:0;">
   <div style="position:relative;z-index:1;">
-    <h2 style="margin-bottom:20px;color:var(--chalk);font-size:clamp(48px,8vw,80px);">Ready to play?</h2>
-    <p style="max-width:460px;margin:0 auto 40px;color:var(--chalk);opacity:0.7;font-size:19px;">30 spots. 6 weeks. Free. Registration is open for Summer 2026. Claim your place on The Pitch.</p>
-    <button class="btn btn--lime" onclick="showPage('register')" style="font-size:18px;padding:20px 52px;">Register Now</button>
+    <h2 data-cms="home_h2" style="margin-bottom:20px;color:var(--chalk);font-size:clamp(48px,8vw,80px);">Ready to play?</h2>
+    <p data-cms="home_p10" style="max-width:460px;margin:0 auto 40px;color:var(--chalk);opacity:0.7;font-size:19px;">30 spots. 6 weeks. Free. Registration is open for Summer 2026. Claim your place on The Pitch.</p>
+    <button data-cms-btn-label="home_btn6_label" data-cms-btn-link="home_btn6_link" class="btn btn--lime" onclick="showPage('register')" style="font-size:18px;padding:20px 52px;">Register Now</button>
   </div>
 </section>
 
@@ -462,7 +462,7 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
     <h1 style="font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(30px,8.5vw,104px);color:var(--chalk);line-height:0.85;margin-bottom:28px;letter-spacing:-0.03em;text-transform:uppercase;">Wednesday<br><span style="color:var(--lime);">Run.</span></h1>
     <p data-cms="run_hero_subtext" style="font-size:20px;opacity:0.55;max-width:520px;margin:0 0 40px;color:var(--chalk);line-height:1.7;">Open-run soccer for ballers 18 and up. Every Wednesday at Metrogolf Sportsplex. No fees, no commitment. Bring your boots, link up with your city, and play.</p>
     <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;">
-      <button class="btn btn--lime" style="font-family:'Syne',sans-serif;font-size:15px;padding:18px 46px;letter-spacing:0.08em;" onclick="document.getElementById('run-signup').scrollIntoView({behavior:'smooth',block:'start'});">Reserve Your Spot</button>
+      <button data-cms-btn-label="run_btn1_label" data-cms-btn-link="run_btn1_link" class="btn btn--lime" style="font-family:'Syne',sans-serif;font-size:15px;padding:18px 46px;letter-spacing:0.08em;" onclick="document.getElementById('run-signup').scrollIntoView({behavior:'smooth',block:'start'});">Reserve Your Spot</button>
       <span id="run-spots-hero" style="font-family:'Syne',sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.14em;color:var(--chalk);opacity:0.4;">Free &middot; Capped at 30</span>
     </div>
   </div>
@@ -501,18 +501,18 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
   <div class="run-steps" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
     <div style="background:rgba(242,239,230,0.04);border:1px solid rgba(197,241,53,0.12);border-radius:8px;padding:32px;">
       <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:34px;color:var(--lime);margin-bottom:14px;">01</div>
-      <h3 style="color:var(--chalk);font-size:19px;margin-bottom:10px;">Pull Up</h3>
-      <p style="font-size:15px;line-height:1.65;color:var(--chalk);opacity:0.5;">Reserve your spot, then roll through. Check in, lace up, and you're on.</p>
+      <h3 data-cms="run_h2" style="color:var(--chalk);font-size:19px;margin-bottom:10px;">Pull Up</h3>
+      <p data-cms="run_p1" style="font-size:15px;line-height:1.65;color:var(--chalk);opacity:0.5;">Reserve your spot, then roll through. Check in, lace up, and you're on.</p>
     </div>
     <div style="background:rgba(242,239,230,0.04);border:1px solid rgba(197,241,53,0.12);border-radius:8px;padding:32px;">
       <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:34px;color:var(--lime);margin-bottom:14px;">02</div>
-      <h3 style="color:var(--chalk);font-size:19px;margin-bottom:10px;">Run It</h3>
-      <p style="font-size:15px;line-height:1.65;color:var(--chalk);opacity:0.5;">Small-sided games, balanced teams, real runs. Competitive but always welcoming.</p>
+      <h3 data-cms="run_h3" style="color:var(--chalk);font-size:19px;margin-bottom:10px;">Run It</h3>
+      <p data-cms="run_p2" style="font-size:15px;line-height:1.65;color:var(--chalk);opacity:0.5;">Small-sided games, balanced teams, real runs. Competitive but always welcoming.</p>
     </div>
     <div style="background:rgba(242,239,230,0.04);border:1px solid rgba(197,241,53,0.12);border-radius:8px;padding:32px;">
       <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:34px;color:var(--lime);margin-bottom:14px;">03</div>
-      <h3 style="color:var(--chalk);font-size:19px;margin-bottom:10px;">Link Up</h3>
-      <p style="font-size:15px;line-height:1.65;color:var(--chalk);opacity:0.5;">Meet the regulars, build your circle, and keep the midweek run going all summer.</p>
+      <h3 data-cms="run_h4" style="color:var(--chalk);font-size:19px;margin-bottom:10px;">Link Up</h3>
+      <p data-cms="run_p3" style="font-size:15px;line-height:1.65;color:var(--chalk);opacity:0.5;">Meet the regulars, build your circle, and keep the midweek run going all summer.</p>
     </div>
   </div>
 </section>
@@ -521,8 +521,8 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
 <section id="run-signup" style="padding:40px 64px 100px;">
   <div style="max-width:560px;margin:0 auto;background:rgba(242,239,230,0.03);border:1px solid rgba(197,241,53,0.14);border-radius:12px;padding:48px;">
     <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:0.2em;color:var(--lime);margin-bottom:14px;">Reserve Your Spot</div>
-    <h2 style="color:var(--chalk);font-size:clamp(32px,4.5vw,46px);margin-bottom:12px;letter-spacing:-0.02em;">Claim a spot on the run.</h2>
-    <p style="font-size:15px;line-height:1.65;color:var(--chalk);opacity:0.5;margin-bottom:32px;">30 spots only. Drop your details below and you're locked in for this Wednesday's run.</p>
+    <h2 data-cms="run_h1" style="color:var(--chalk);font-size:clamp(32px,4.5vw,46px);margin-bottom:12px;letter-spacing:-0.02em;">Claim a spot on the run.</h2>
+    <p data-cms="run_p4" style="font-size:15px;line-height:1.65;color:var(--chalk);opacity:0.5;margin-bottom:32px;">30 spots only. Drop your details below and you're locked in for this Wednesday's run.</p>
 
     <div id="run-spots-banner" style="margin-bottom:30px;padding:18px 20px;background:rgba(197,241,53,0.07);border:1px solid rgba(197,241,53,0.22);border-radius:10px;">
       <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:12px;">
@@ -562,9 +562,9 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
       <input type="checkbox" id="run-waiver" style="accent-color:var(--lime);">
       <label for="run-waiver" style="font-size:13px;opacity:0.55;line-height:1.6;color:var(--chalk);">I confirm I'm 18 or older and I take part in The Wednesday Run at my own risk. I release The Pitch Toronto and Metrogolf Sportsplex from liability for any injury or loss during play.</label>
     </div>
-    <button class="btn btn--lime" id="run-submit" style="width:100%;text-align:center;margin-top:28px;font-family:'Syne',sans-serif;font-size:15px;letter-spacing:0.06em;padding:18px;" onclick="submitRun()">Reserve My Spot</button>
+    <button data-cms-btn-label="run_btn2_label" class="btn btn--lime" id="run-submit" style="width:100%;text-align:center;margin-top:28px;font-family:'Syne',sans-serif;font-size:15px;letter-spacing:0.06em;padding:18px;" onclick="submitRun()">Reserve My Spot</button>
     <p id="run-status" style="font-size:13px;margin-top:14px;color:var(--lime);display:none;"></p>
-    <p style="font-size:11px;opacity:0.4;margin-top:10px;color:var(--chalk);">We'll only use your info to confirm your spot. No spam.</p>
+    <p data-cms="run_p5" style="font-size:11px;opacity:0.4;margin-top:10px;color:var(--chalk);">We'll only use your info to confirm your spot. No spam.</p>
   </div>
 </section>
 
@@ -576,9 +576,9 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
       <div style="font-family:'Syne',sans-serif;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--chalk);opacity:0.35;margin-top:6px;">Where Passion Meets Precision</div>
     </div>
     <div style="display:flex;gap:28px;flex-wrap:wrap;font-family:'Syne',sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.1em;">
-      <button onclick="showPage('home')" style="background:none;border:none;color:var(--chalk);opacity:0.5;cursor:pointer;font:inherit;">Home</button>
-      <button onclick="showPage('summer2026')" style="background:none;border:none;color:var(--chalk);opacity:0.5;cursor:pointer;font:inherit;">Youth Programs</button>
-      <button onclick="showPage('contact')" style="background:none;border:none;color:var(--chalk);opacity:0.5;cursor:pointer;font:inherit;">Contact</button>
+      <button data-cms-btn-label="run_btn3_label" data-cms-btn-link="run_btn3_link" onclick="showPage('home')" style="background:none;border:none;color:var(--chalk);opacity:0.5;cursor:pointer;font:inherit;">Home</button>
+      <button data-cms-btn-label="run_btn4_label" data-cms-btn-link="run_btn4_link" onclick="showPage('summer2026')" style="background:none;border:none;color:var(--chalk);opacity:0.5;cursor:pointer;font:inherit;">Youth Programs</button>
+      <button data-cms-btn-label="run_btn5_label" data-cms-btn-link="run_btn5_link" onclick="showPage('contact')" style="background:none;border:none;color:var(--chalk);opacity:0.5;cursor:pointer;font:inherit;">Contact</button>
     </div>
   </div>
   <div style="margin-top:28px;font-size:11px;opacity:0.2;letter-spacing:0.1em;text-transform:uppercase;color:var(--chalk);">&copy; 2026 The Pitch &middot; Toronto, Ontario &middot; All Rights Reserved</div>
@@ -596,7 +596,7 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
     <div>
       <span class="eyebrow" style="color:var(--forest);">Our Story</span>
       <h1 style="font-size:clamp(56px,10vw,100px);color:var(--black);margin-bottom:24px;">Built for<br>the field.<br><span style="color:var(--forest);">Built for the<br>Community.</span></h1>
-      <p style="opacity:0.5;max-width:480px;">The Pitch is Toronto's next big soccer platform &#8212; a space where youth in Scarborough can discover their potential on and off the pitch. No barriers, no red tape. Just the game we all love.</p>
+      <p data-cms="about_p1" style="opacity:0.5;max-width:480px;">The Pitch is Toronto's next big soccer platform &#8212; a space where youth in Scarborough can discover their potential on and off the pitch. No barriers, no red tape. Just the game we all love.</p>
     </div>
     <div style="display:flex;justify-content:center;align-items:center;">
       <img data-cms-src="img_logo" src="/images/logo.png" alt="The Pitch Logo" style="width:600px;height:600px;object-fit:contain;opacity:0.12;">
@@ -609,10 +609,10 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
   <div class="grid-2" style="display:grid;grid-template-columns:1fr 1fr;gap:72px;">
     <div>
       <span class="eyebrow" style="color:var(--forest);">Mission</span>
-      <p style="font-size:18px;font-weight:400;line-height:1.7;opacity:0.7;">Elevating the standard of soccer in Toronto through excellence, innovation, and community engagement &#8212; starting in Scarborough.</p>
+      <p data-cms="about_p2" style="font-size:18px;font-weight:400;line-height:1.7;opacity:0.7;">Elevating the standard of soccer in Toronto through excellence, innovation, and community engagement &#8212; starting in Scarborough.</p>
       <div style="height:1px;background:rgba(25,52,38,0.1);margin:36px 0;"></div>
       <span class="eyebrow" style="color:var(--forest);">Vision</span>
-      <p style="font-size:18px;font-weight:400;line-height:1.7;opacity:0.7;">To become Toronto's leading soccer organization &#8212; the go-to place to play the beautiful game in the GTA.</p>
+      <p data-cms="about_p3" style="font-size:18px;font-weight:400;line-height:1.7;opacity:0.7;">To become Toronto's leading soccer organization &#8212; the go-to place to play the beautiful game in the GTA.</p>
     </div>
     <div style="height:380px;border-radius:6px;overflow:hidden;">
       <img data-cms-src="img_feature_action" src="/images/feature-action.jpg" alt="Youth soccer" class="img-cover">
@@ -626,23 +626,23 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
   <div class="grid-4" style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:20px;">
     <div style="background:var(--black);color:var(--chalk);padding:32px 24px;border-radius:6px;">
       <div style="font-family:'Barlow Condensed';font-weight:800;font-size:36px;color:var(--lime);margin-bottom:10px;">01</div>
-      <h3 style="color:var(--chalk);font-size:18px;margin-bottom:8px;">Excellence</h3>
-      <p style="font-size:15px;opacity:0.55;color:var(--chalk);">No shortcuts. Every session, every match, every detail is held to a higher standard.</p>
+      <h3 data-cms="about_h1" style="color:var(--chalk);font-size:18px;margin-bottom:8px;">Excellence</h3>
+      <p data-cms="about_p4" style="font-size:15px;opacity:0.55;color:var(--chalk);">No shortcuts. Every session, every match, every detail is held to a higher standard.</p>
     </div>
     <div style="background:var(--forest);color:var(--chalk);padding:32px 24px;border-radius:6px;">
       <div style="font-family:'Barlow Condensed';font-weight:800;font-size:36px;color:var(--lime);margin-bottom:10px;">02</div>
-      <h3 style="color:var(--chalk);font-size:18px;margin-bottom:8px;">Community</h3>
-      <p style="font-size:15px;opacity:0.55;color:var(--chalk);">Rooted in Scarborough. Every program is built with and for the people in it.</p>
+      <h3 data-cms="about_h2" style="color:var(--chalk);font-size:18px;margin-bottom:8px;">Community</h3>
+      <p data-cms="about_p5" style="font-size:15px;opacity:0.55;color:var(--chalk);">Rooted in Scarborough. Every program is built with and for the people in it.</p>
     </div>
     <div style="background:var(--turf);color:var(--chalk);padding:32px 24px;border-radius:6px;">
       <div style="font-family:'Barlow Condensed';font-weight:800;font-size:36px;color:var(--lime);margin-bottom:10px;">03</div>
-      <h3 style="color:var(--chalk);font-size:18px;margin-bottom:8px;">Innovation</h3>
-      <p style="font-size:15px;opacity:0.55;color:var(--chalk);">Modern training, fresh structure, new opportunities &#8212; redefining what a league can be.</p>
+      <h3 data-cms="about_h3" style="color:var(--chalk);font-size:18px;margin-bottom:8px;">Innovation</h3>
+      <p data-cms="about_p6" style="font-size:15px;opacity:0.55;color:var(--chalk);">Modern training, fresh structure, new opportunities &#8212; redefining what a league can be.</p>
     </div>
     <div style="background:var(--lime);color:var(--black);padding:32px 24px;border-radius:6px;">
       <div style="font-family:'Barlow Condensed';font-weight:800;font-size:36px;color:rgba(13,26,16,0.25);margin-bottom:10px;">04</div>
-      <h3 style="font-size:18px;margin-bottom:8px;">Recognition</h3>
-      <p style="font-size:15px;opacity:0.65;">Every player deserves to be seen. The Pitch puts names and stories on the map.</p>
+      <h3 data-cms="about_h4" style="font-size:18px;margin-bottom:8px;">Recognition</h3>
+      <p data-cms="about_p7" style="font-size:15px;opacity:0.65;">Every player deserves to be seen. The Pitch puts names and stories on the map.</p>
     </div>
   </div>
 </section>
@@ -664,12 +664,12 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
       <div>
         <h2 style="color:var(--chalk);font-size:clamp(32px,4vw,48px);margin-bottom:32px;">Soccer should<br>be for everyone.</h2>
         <div style="columns:1;column-gap:48px;">
-          <p style="color:var(--chalk);opacity:0.55;margin-bottom:20px;">Growing up in Scarborough, I saw firsthand how powerful the game can be. It brings people together across cultures, backgrounds, and experiences in a way few things can. At its core, soccer is the world's game because it asks for so little. All you need is a ball and a place to play. But despite that simplicity, access to structured, high-quality opportunities isn't always there for everyone. That's the gap The Pitch was created to fill.</p>
-          <p style="color:var(--chalk);opacity:0.55;margin-bottom:20px;">The Pitch is built by players, for players. It's designed with a real understanding of what the game means to the people who play it and what's often missing in traditional systems. This is more than just a league. It's a space where players can develop their skills, compete at a high level, and be part of something consistent and meaningful within their community.</p>
-          <p style="color:var(--chalk);opacity:0.55;margin-bottom:20px;">Our goal is to grow the love of the game across Scarborough and throughout Toronto, while building something bigger than just a season or a tournament. We're working toward becoming the go-to place to play soccer in the city.</p>
-          <p style="color:var(--chalk);opacity:0.55;margin-bottom:24px;">At the end of the day, this is about community. It's about giving people a place to belong, to compete, and to grow through the game we all love.</p>
-          <p style="color:var(--chalk);opacity:0.7;font-style:italic;font-family:'Barlow Condensed';font-size:18px;font-weight:600;">See you on the pitch!</p>
-          <p style="color:var(--lime);font-family:'Barlow Condensed';font-weight:700;font-size:16px;text-transform:uppercase;letter-spacing:0.06em;margin-top:8px;">&#8212; Raghav Monga</p>
+          <p data-cms="about_p8" style="color:var(--chalk);opacity:0.55;margin-bottom:20px;">Growing up in Scarborough, I saw firsthand how powerful the game can be. It brings people together across cultures, backgrounds, and experiences in a way few things can. At its core, soccer is the world's game because it asks for so little. All you need is a ball and a place to play. But despite that simplicity, access to structured, high-quality opportunities isn't always there for everyone. That's the gap The Pitch was created to fill.</p>
+          <p data-cms="about_p9" style="color:var(--chalk);opacity:0.55;margin-bottom:20px;">The Pitch is built by players, for players. It's designed with a real understanding of what the game means to the people who play it and what's often missing in traditional systems. This is more than just a league. It's a space where players can develop their skills, compete at a high level, and be part of something consistent and meaningful within their community.</p>
+          <p data-cms="about_p10" style="color:var(--chalk);opacity:0.55;margin-bottom:20px;">Our goal is to grow the love of the game across Scarborough and throughout Toronto, while building something bigger than just a season or a tournament. We're working toward becoming the go-to place to play soccer in the city.</p>
+          <p data-cms="about_p11" style="color:var(--chalk);opacity:0.55;margin-bottom:24px;">At the end of the day, this is about community. It's about giving people a place to belong, to compete, and to grow through the game we all love.</p>
+          <p data-cms="about_p12" style="color:var(--chalk);opacity:0.7;font-style:italic;font-family:'Barlow Condensed';font-size:18px;font-weight:600;">See you on the pitch!</p>
+          <p data-cms="about_p13" style="color:var(--lime);font-family:'Barlow Condensed';font-weight:700;font-size:16px;text-transform:uppercase;letter-spacing:0.06em;margin-top:8px;">&#8212; Raghav Monga</p>
         </div>
       </div>
     </div>
@@ -678,8 +678,8 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
 
 <section class="section" style="text-align:center;">
   <h2 style="margin-bottom:16px;">Be part of<br>something bigger.</h2>
-  <p style="opacity:0.5;max-width:400px;margin:0 auto 36px;">The Pitch is growing, and we need people who care. Whether you can coach, mentor, or help behind the scenes &#8212; there's a place for you.</p>
-  <button class="btn btn--forest" onclick="showPage('volunteer')">Sign Up to Volunteer</button>
+  <p data-cms="about_p14" style="opacity:0.5;max-width:400px;margin:0 auto 36px;">The Pitch is growing, and we need people who care. Whether you can coach, mentor, or help behind the scenes &#8212; there's a place for you.</p>
+  <button data-cms-btn-label="about_btn1_label" data-cms-btn-link="about_btn1_link" class="btn btn--forest" onclick="showPage('volunteer')">Sign Up to Volunteer</button>
 </section>
 </div>
 
@@ -690,7 +690,7 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
 <section style="margin-top:72px;padding:80px 64px 40px;">
   <span class="eyebrow" style="color:var(--forest);">Registration</span>
   <h1 style="font-size:clamp(48px,8vw,80px);color:var(--black);">CLAIM YOUR<br><span style="color:var(--forest);">SPOT.</span></h1>
-  <p style="opacity:0.5;max-width:460px;margin-top:16px;">30 spots available for our free Summer 2026 clinic. Fill out the form below to register. All participants must be under 18 and have guardian consent.</p>
+  <p data-cms="register_p1" style="opacity:0.5;max-width:460px;margin-top:16px;">30 spots available for our free Summer 2026 clinic. Fill out the form below to register. All participants must be under 18 and have guardian consent.</p>
 </section>
 
 <section class="section" style="padding-top:20px;">
@@ -723,12 +723,12 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
         <input type="checkbox" id="consent">
         <label for="consent" style="font-size:14px;opacity:0.6;line-height:1.6;">I confirm that I am the parent/legal guardian of the player listed above and I consent to their participation in The Pitch Summer 2026 Clinic. I understand this is a free program and that my child will be engaged in physical activity.</label>
       </div>
-      <button class="btn btn--forest" id="reg-submit" style="width:100%;text-align:center;margin-top:32px;padding:18px;font-size:16px;" onclick="submitRegistration()">Submit Registration</button>
+      <button data-cms-btn-label="register_btn1_label" class="btn btn--forest" id="reg-submit" style="width:100%;text-align:center;margin-top:32px;padding:18px;font-size:16px;" onclick="submitRegistration()">Submit Registration</button>
       <p id="reg-status" style="font-size:14px;text-align:center;margin-top:12px;color:var(--forest);display:none;"></p>
     </div>
     <div>
       <div style="background:var(--forest);border-radius:8px;padding:36px;margin-bottom:20px;">
-        <h3 style="color:var(--chalk);font-size:20px;margin-bottom:16px;">Program Details</h3>
+        <h3 data-cms="register_h1" style="color:var(--chalk);font-size:20px;margin-bottom:16px;">Program Details</h3>
         <div style="display:flex;flex-direction:column;gap:16px;">
           <div style="border-bottom:1px solid rgba(242,239,230,0.08);padding-bottom:16px;">
             <div style="font-family:'Barlow Condensed';font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--lime);opacity:0.7;margin-bottom:4px;">Program</div>
@@ -774,17 +774,17 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
 <section class="section" style="padding-top:0;">
   <div class="grid-2" style="display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;">
     <div>
-      <h3 style="margin-bottom:24px;font-size:20px;">Send us a message</h3>
+      <h3 data-cms="contact_h1" style="margin-bottom:24px;font-size:20px;">Send us a message</h3>
       <div class="form-group"><label class="form-label">Name</label><input class="form-input" id="contact-name" type="text" placeholder="Your name"></div>
       <div class="form-group"><label class="form-label">Email</label><input class="form-input" id="contact-email" type="email" placeholder="you@email.com"></div>
       <div class="form-group"><label class="form-label">Subject</label><input class="form-input" id="contact-subject" type="text" placeholder="What's this about?"></div>
       <div class="form-group"><label class="form-label">Message</label><textarea class="form-input" id="contact-message" rows="5" placeholder="Tell us what's on your mind..." style="resize:vertical;"></textarea></div>
-      <button class="btn btn--forest" id="contact-submit" style="width:100%;text-align:center;padding:16px;" onclick="submitContact()">Send Message</button>
+      <button data-cms-btn-label="contact_btn1_label" class="btn btn--forest" id="contact-submit" style="width:100%;text-align:center;padding:16px;" onclick="submitContact()">Send Message</button>
       <p id="contact-status" style="font-size:14px;text-align:center;margin-top:12px;color:var(--forest);display:none;"></p>
     </div>
     <div>
       <div style="background:var(--forest);border-radius:8px;padding:36px;">
-        <h3 style="color:var(--chalk);font-size:20px;margin-bottom:24px;">Find us</h3>
+        <h3 data-cms="contact_h2" style="color:var(--chalk);font-size:20px;margin-bottom:24px;">Find us</h3>
         <div style="margin-bottom:24px;">
           <div style="font-family:'Barlow Condensed';font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--lime);opacity:0.7;margin-bottom:6px;">Email</div>
           <p style="color:var(--chalk);opacity:0.7;font-size:16px;"><a href="mailto:play@thepitchtoronto.com" style="color:var(--chalk);opacity:0.7;text-decoration:none;">play@thepitchtoronto.com</a></p>
@@ -806,7 +806,7 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
 <section style="margin-top:72px;padding:100px 64px 60px;">
   <span class="eyebrow" style="color:var(--forest);">Partner With Us</span>
   <h1 style="font-size:clamp(48px,8vw,80px);color:var(--black);">SPONSOR<br><span style="color:var(--forest);">THE PITCH.</span></h1>
-  <p style="opacity:0.5;max-width:520px;margin-top:16px;">Align your brand with Toronto's growing soccer community. The Pitch offers meaningful, community-first partnerships that put your name on the field &#8212; real exposure, real impact, real connection.</p>
+  <p data-cms="sponsors_p1" style="opacity:0.5;max-width:520px;margin-top:16px;">Align your brand with Toronto's growing soccer community. The Pitch offers meaningful, community-first partnerships that put your name on the field &#8212; real exposure, real impact, real connection.</p>
 </section>
 
 <!-- WHY SPONSOR -->
@@ -814,18 +814,18 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
   <div class="grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:60px;">
     <div style="background:var(--forest);border-radius:6px;padding:32px;">
       <div style="font-family:'Barlow Condensed';font-weight:800;font-size:36px;color:var(--lime);margin-bottom:10px;">30+</div>
-      <h3 style="color:var(--chalk);font-size:18px;margin-bottom:8px;">Youth Reached</h3>
-      <p style="font-size:15px;opacity:0.5;color:var(--chalk);">Direct exposure to families and young athletes in the Scarborough community.</p>
+      <h3 data-cms="sponsors_h1" style="color:var(--chalk);font-size:18px;margin-bottom:8px;">Youth Reached</h3>
+      <p data-cms="sponsors_p2" style="font-size:15px;opacity:0.5;color:var(--chalk);">Direct exposure to families and young athletes in the Scarborough community.</p>
     </div>
     <div style="background:var(--forest);border-radius:6px;padding:32px;">
       <div style="font-family:'Barlow Condensed';font-weight:800;font-size:36px;color:var(--lime);margin-bottom:10px;">6</div>
-      <h3 style="color:var(--chalk);font-size:18px;margin-bottom:8px;">Weeks of Exposure</h3>
-      <p style="font-size:15px;opacity:0.5;color:var(--chalk);">Your brand on display at every session, event, and digital touchpoint throughout the program.</p>
+      <h3 data-cms="sponsors_h2" style="color:var(--chalk);font-size:18px;margin-bottom:8px;">Weeks of Exposure</h3>
+      <p data-cms="sponsors_p3" style="font-size:15px;opacity:0.5;color:var(--chalk);">Your brand on display at every session, event, and digital touchpoint throughout the program.</p>
     </div>
     <div style="background:var(--forest);border-radius:6px;padding:32px;">
       <div style="font-family:'Barlow Condensed';font-weight:800;font-size:36px;color:var(--lime);margin-bottom:10px;">&#8734;</div>
-      <h3 style="color:var(--chalk);font-size:18px;margin-bottom:8px;">Community Impact</h3>
-      <p style="font-size:15px;opacity:0.5;color:var(--chalk);">Be part of something real. Your support directly funds free access to sport and builds community from the ground up.</p>
+      <h3 data-cms="sponsors_h3" style="color:var(--chalk);font-size:18px;margin-bottom:8px;">Community Impact</h3>
+      <p data-cms="sponsors_p4" style="font-size:15px;opacity:0.5;color:var(--chalk);">Be part of something real. Your support directly funds free access to sport and builds community from the ground up.</p>
     </div>
   </div>
 
@@ -834,7 +834,7 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
   <div class="sponsor-tiers" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px;margin-bottom:60px;">
     <div style="border:1.5px solid rgba(25,52,38,0.1);border-radius:8px;padding:36px;display:flex;flex-direction:column;">
       <div style="font-family:'Barlow Condensed';font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:0.14em;color:var(--stone);margin-bottom:8px;">Community</div>
-      <h3 style="font-size:24px;margin-bottom:16px;">Bronze</h3>
+      <h3 data-cms="sponsors_h4" style="font-size:24px;margin-bottom:16px;">Bronze</h3>
       <div style="height:1px;background:rgba(25,52,38,0.08);margin-bottom:20px;"></div>
       <div style="display:flex;flex-direction:column;gap:12px;flex:1;">
         <div style="display:flex;align-items:center;gap:10px;font-size:15px;opacity:0.6;"><span style="color:var(--turf);font-weight:600;">&#10003;</span> Logo on website</div>
@@ -845,7 +845,7 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
     <div style="border:2px solid var(--forest);border-radius:8px;padding:36px;display:flex;flex-direction:column;position:relative;">
       <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--forest);color:var(--chalk);font-family:'Barlow Condensed';font-weight:700;font-size:10px;text-transform:uppercase;letter-spacing:0.14em;padding:4px 16px;border-radius:2px;">Recommended</div>
       <div style="font-family:'Barlow Condensed';font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:0.14em;color:var(--forest);margin-bottom:8px;">Impact</div>
-      <h3 style="font-size:24px;margin-bottom:16px;">Silver</h3>
+      <h3 data-cms="sponsors_h5" style="font-size:24px;margin-bottom:16px;">Silver</h3>
       <div style="height:1px;background:rgba(25,52,38,0.08);margin-bottom:20px;"></div>
       <div style="display:flex;flex-direction:column;gap:12px;flex:1;">
         <div style="display:flex;align-items:center;gap:10px;font-size:15px;opacity:0.6;"><span style="color:var(--turf);font-weight:600;">&#10003;</span> Everything in Bronze</div>
@@ -856,7 +856,7 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
     </div>
     <div style="border:1.5px solid rgba(25,52,38,0.1);border-radius:8px;padding:36px;display:flex;flex-direction:column;">
       <div style="font-family:'Barlow Condensed';font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:0.14em;color:var(--lime);background:var(--forest);display:inline-block;padding:2px 10px;border-radius:2px;margin-bottom:8px;width:fit-content;">Premium</div>
-      <h3 style="font-size:24px;margin-bottom:16px;">Gold</h3>
+      <h3 data-cms="sponsors_h6" style="font-size:24px;margin-bottom:16px;">Gold</h3>
       <div style="height:1px;background:rgba(25,52,38,0.08);margin-bottom:20px;"></div>
       <div style="display:flex;flex-direction:column;gap:12px;flex:1;">
         <div style="display:flex;align-items:center;gap:10px;font-size:15px;opacity:0.6;"><span style="color:var(--turf);font-weight:600;">&#10003;</span> Everything in Silver</div>
@@ -874,7 +874,7 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
     <div>
       <span class="eyebrow" style="color:var(--chalk);">Sponsorship Inquiry</span>
       <h2 style="color:var(--chalk);margin-bottom:16px;">Let's build<br>together.</h2>
-      <p style="color:var(--chalk);opacity:0.45;max-width:380px;">Whether you're a local business, a national brand, or someone who believes in the mission &#8212; we'd love to hear from you.</p>
+      <p data-cms="sponsors_p5" style="color:var(--chalk);opacity:0.45;max-width:380px;">Whether you're a local business, a national brand, or someone who believes in the mission &#8212; we'd love to hear from you.</p>
     </div>
     <div>
       <div class="form-group"><label class="form-label" style="color:var(--chalk);">Company / Organization</label><input class="form-input" id="spon-company" type="text" placeholder="Your company name" style="background:rgba(242,239,230,0.08);border-color:rgba(242,239,230,0.12);color:var(--chalk);"></div>
@@ -891,7 +891,7 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
         </select>
       </div>
       <div class="form-group"><label class="form-label" style="color:var(--chalk);">Message</label><textarea class="form-input" id="spon-message" rows="4" placeholder="Tell us about your interest in partnering with The Pitch..." style="background:rgba(242,239,230,0.08);border-color:rgba(242,239,230,0.12);color:var(--chalk);resize:vertical;"></textarea></div>
-      <button class="btn btn--lime" id="spon-submit" style="width:100%;text-align:center;padding:16px;" onclick="submitSponsor()">Submit Inquiry</button>
+      <button data-cms-btn-label="sponsors_btn1_label" class="btn btn--lime" id="spon-submit" style="width:100%;text-align:center;padding:16px;" onclick="submitSponsor()">Submit Inquiry</button>
       <p id="spon-status" style="display:none;margin-top:12px;font-size:14px;"></p>
     </div>
   </div>
@@ -918,14 +918,14 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
     <div>
       <span class="eyebrow" style="color:var(--forest);">About the Program</span>
       <h2 style="margin-bottom:24px;font-size:clamp(36px,5vw,56px);">Free. Structured.<br><span style="color:var(--forest);">For Everyone.</span></h2>
-      <p style="opacity:0.6;margin-bottom:24px;">The Pitch Summer 2026 Clinic is a free 6-week soccer program for youth aged 18 and under in Scarborough. Every Wednesday afternoon, we bring together young athletes for professional coaching, skill development, real competition, and community.</p>
-      <p style="opacity:0.6;margin-bottom:24px;">Playing sports changes lives. It builds confidence, teaches teamwork, keeps you active, and gives you something to look forward to every week. We believe every kid deserves access to that &#8212; regardless of their background or what they can afford.</p>
-      <p style="opacity:0.6;margin-bottom:32px;">This isn't just a clinic. It's a place to belong. Show up, play hard, and be part of something special.</p>
-      <button class="btn btn--forest" onclick="showPage('register')">Register Now &#8212; It's Free</button>
+      <p data-cms="summer_p1" style="opacity:0.6;margin-bottom:24px;">The Pitch Summer 2026 Clinic is a free 6-week soccer program for youth aged 18 and under in Scarborough. Every Wednesday afternoon, we bring together young athletes for professional coaching, skill development, real competition, and community.</p>
+      <p data-cms="summer_p2" style="opacity:0.6;margin-bottom:24px;">Playing sports changes lives. It builds confidence, teaches teamwork, keeps you active, and gives you something to look forward to every week. We believe every kid deserves access to that &#8212; regardless of their background or what they can afford.</p>
+      <p data-cms="summer_p3" style="opacity:0.6;margin-bottom:32px;">This isn't just a clinic. It's a place to belong. Show up, play hard, and be part of something special.</p>
+      <button data-cms-btn-label="summer_btn1_label" data-cms-btn-link="summer_btn1_link" class="btn btn--forest" onclick="showPage('register')">Register Now &#8212; It's Free</button>
     </div>
     <div>
       <div style="background:var(--forest);border-radius:8px;padding:36px;margin-bottom:20px;">
-        <h3 style="color:var(--chalk);font-size:22px;margin-bottom:24px;">Program Details</h3>
+        <h3 data-cms="summer_h2" style="color:var(--chalk);font-size:22px;margin-bottom:24px;">Program Details</h3>
         <div style="display:flex;flex-direction:column;gap:20px;">
           <div style="display:flex;align-items:center;gap:16px;">
             <div style="width:44px;height:44px;background:rgba(197,241,53,0.15);border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
@@ -978,24 +978,24 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
   <h2 style="color:var(--chalk);margin-bottom:48px;">More than<br>a game.</h2>
   <div class="grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
     <div style="background:rgba(242,239,230,0.05);border:1px solid rgba(242,239,230,0.08);border-radius:6px;padding:32px;">
-      <h3 style="color:var(--lime);font-size:20px;margin-bottom:12px;">Build Confidence</h3>
-      <p style="font-size:15px;opacity:0.5;color:var(--chalk);">Step on the field, challenge yourself, and walk off knowing you gave it everything. That feeling carries into everything else.</p>
+      <h3 data-cms="summer_h3" style="color:var(--lime);font-size:20px;margin-bottom:12px;">Build Confidence</h3>
+      <p data-cms="summer_p4" style="font-size:15px;opacity:0.5;color:var(--chalk);">Step on the field, challenge yourself, and walk off knowing you gave it everything. That feeling carries into everything else.</p>
     </div>
     <div style="background:rgba(242,239,230,0.05);border:1px solid rgba(242,239,230,0.08);border-radius:6px;padding:32px;">
-      <h3 style="color:var(--lime);font-size:20px;margin-bottom:12px;">Stay Active</h3>
-      <p style="font-size:15px;opacity:0.5;color:var(--chalk);">An hour of real training and match play every week keeps you sharp, healthy, and energized for everything else in life.</p>
+      <h3 data-cms="summer_h4" style="color:var(--lime);font-size:20px;margin-bottom:12px;">Stay Active</h3>
+      <p data-cms="summer_p5" style="font-size:15px;opacity:0.5;color:var(--chalk);">An hour of real training and match play every week keeps you sharp, healthy, and energized for everything else in life.</p>
     </div>
     <div style="background:rgba(242,239,230,0.05);border:1px solid rgba(242,239,230,0.08);border-radius:6px;padding:32px;">
-      <h3 style="color:var(--lime);font-size:20px;margin-bottom:12px;">Find Your People</h3>
-      <p style="font-size:15px;opacity:0.5;color:var(--chalk);">The best friendships are made on the pitch. Meet people from your community who share the same love for the game.</p>
+      <h3 data-cms="summer_h5" style="color:var(--lime);font-size:20px;margin-bottom:12px;">Find Your People</h3>
+      <p data-cms="summer_p6" style="font-size:15px;opacity:0.5;color:var(--chalk);">The best friendships are made on the pitch. Meet people from your community who share the same love for the game.</p>
     </div>
   </div>
 </section>
 
 <section class="section" style="text-align:center;">
-  <h2 style="margin-bottom:16px;">Don't miss out.</h2>
-  <p style="opacity:0.5;max-width:420px;margin:0 auto 36px;">Only 30 spots available. Registration is open now for Summer 2026.</p>
-  <button class="btn btn--forest" onclick="showPage('register')" style="font-size:16px;padding:18px 48px;">Register Now</button>
+  <h2 data-cms="summer_h1" style="margin-bottom:16px;">Don't miss out.</h2>
+  <p data-cms="summer_p7" style="opacity:0.5;max-width:420px;margin:0 auto 36px;">Only 30 spots available. Registration is open now for Summer 2026.</p>
+  <button data-cms-btn-label="summer_btn2_label" data-cms-btn-link="summer_btn2_link" class="btn btn--forest" onclick="showPage('register')" style="font-size:16px;padding:18px 48px;">Register Now</button>
 </section>
 </div>
 
@@ -1022,12 +1022,12 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
     <img data-cms-src="img_logo" src="/images/logo.png" alt="The Pitch" style="width:120px;height:120px;object-fit:contain;opacity:0.5;margin-bottom:32px;filter:brightness(5) sepia(1) hue-rotate(30deg) saturate(5);">
     <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:0.25em;color:var(--lime);opacity:0.8;margin-bottom:24px;">The Pitch League</div>
     <h1 style="font-family:'Syne',sans-serif;font-size:clamp(64px,14vw,140px);color:var(--chalk);line-height:0.85;margin-bottom:32px;letter-spacing:-0.02em;text-align:left;">COMING<br><span style="color:var(--lime);">SOON.</span></h1>
-    <p style="font-size:19px;opacity:0.45;max-width:480px;margin:0 0 48px;color:var(--chalk);line-height:1.8;">A competitive soccer league built in Toronto, built for the community. Get ready to compete.</p>
-    <button class="btn btn--lime" style="font-family:'Syne',sans-serif;font-size:14px;padding:18px 44px;letter-spacing:0.12em;" onclick="document.getElementById('league-signup').style.display='block';this.style.display='none';">Be the First to Know</button>
+    <p data-cms="leagues_p1" style="font-size:19px;opacity:0.45;max-width:480px;margin:0 0 48px;color:var(--chalk);line-height:1.8;">A competitive soccer league built in Toronto, built for the community. Get ready to compete.</p>
+    <button data-cms-btn-label="leagues_btn1_label" class="btn btn--lime" style="font-family:'Syne',sans-serif;font-size:14px;padding:18px 44px;letter-spacing:0.12em;" onclick="document.getElementById('league-signup').style.display='block';this.style.display='none';">Be the First to Know</button>
 
     <!-- Email signup form (hidden initially) -->
     <div id="league-signup" style="display:none;margin-top:40px;max-width:440px;">
-      <p style="font-size:15px;opacity:0.5;color:var(--chalk);margin-bottom:20px;">Drop your info below and we'll let you know the moment registration opens.</p>
+      <p data-cms="leagues_p2" style="font-size:15px;opacity:0.5;color:var(--chalk);margin-bottom:20px;">Drop your info below and we'll let you know the moment registration opens.</p>
       <div class="form-group" style="text-align:left;">
         <label class="form-label" style="color:var(--chalk);">Name</label>
         <input class="form-input" id="league-name" type="text" placeholder="Your name" style="background:rgba(242,239,230,0.06);border-color:rgba(197,241,53,0.15);color:var(--chalk);">
@@ -1036,9 +1036,9 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
         <label class="form-label" style="color:var(--chalk);">Email</label>
         <input class="form-input" id="league-email" type="email" placeholder="you@email.com" style="background:rgba(242,239,230,0.06);border-color:rgba(197,241,53,0.15);color:var(--chalk);">
       </div>
-      <button class="btn btn--lime" id="league-submit" style="width:100%;font-family:'Syne',sans-serif;font-size:14px;padding:16px;letter-spacing:0.12em;" onclick="submitLeague()">Subscribe for Updates</button>
+      <button data-cms-btn-label="leagues_btn2_label" class="btn btn--lime" id="league-submit" style="width:100%;font-family:'Syne',sans-serif;font-size:14px;padding:16px;letter-spacing:0.12em;" onclick="submitLeague()">Subscribe for Updates</button>
       <p id="league-status" style="font-size:13px;margin-top:12px;color:var(--lime);display:none;"></p>
-      <p style="font-size:11px;opacity:0.5;margin-top:8px;color:#ffffff;">We'll never spam you. Just the good stuff.</p>
+      <p data-cms="leagues_p3" style="font-size:11px;opacity:0.5;margin-top:8px;color:#ffffff;">We'll never spam you. Just the good stuff.</p>
     </div>
   </div>
 </section>
@@ -1052,13 +1052,13 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
 <section style="margin-top:72px;padding:100px 64px 60px;">
   <span class="eyebrow" style="color:var(--forest);">Get Involved</span>
   <h1 style="font-size:clamp(48px,8vw,80px);color:var(--black);">VOLUNTEER<br><span style="color:var(--forest);">WITH US.</span></h1>
-  <p style="opacity:0.5;max-width:520px;margin-top:16px;">Love the game and want to give back? We're looking for volunteers to help run our programs, mentor youth, and build this community alongside us.</p>
+  <p data-cms="volunteer_p1" style="opacity:0.5;max-width:520px;margin-top:16px;">Love the game and want to give back? We're looking for volunteers to help run our programs, mentor youth, and build this community alongside us.</p>
 </section>
 
 <section class="section" style="padding-top:0;">
   <div class="grid-2" style="display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;">
     <div>
-      <h3 style="margin-bottom:24px;font-size:20px;">Tell us about yourself</h3>
+      <h3 data-cms="volunteer_h1" style="margin-bottom:24px;font-size:20px;">Tell us about yourself</h3>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
         <div class="form-group"><label class="form-label">First Name</label><input class="form-input" id="vol-firstName" type="text" placeholder="First name"></div>
         <div class="form-group"><label class="form-label">Last Name</label><input class="form-input" id="vol-lastName" type="text" placeholder="Last name"></div>
@@ -1090,7 +1090,7 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
         </select>
       </div>
       <div class="form-group"><label class="form-label">Message</label><textarea class="form-input" id="vol-message" rows="4" placeholder="Tell us why you'd like to volunteer and what you can bring to The Pitch..." style="resize:vertical;"></textarea></div>
-      <button class="btn btn--forest" id="vol-submit" style="width:100%;text-align:center;padding:16px;" onclick="submitVolunteer()">Submit Application</button>
+      <button data-cms-btn-label="volunteer_btn1_label" class="btn btn--forest" id="vol-submit" style="width:100%;text-align:center;padding:16px;" onclick="submitVolunteer()">Submit Application</button>
       <p id="vol-status" style="font-size:13px;color:var(--turf);text-align:center;margin-top:12px;display:none;"></p>
     </div>
     <div>
@@ -1098,9 +1098,9 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
         <img data-cms-src="img_register" src="/images/register.jpg" alt="Youth soccer" class="img-cover">
       </div>
       <div style="background:var(--forest);border-radius:8px;padding:32px;">
-        <h3 style="color:var(--chalk);font-size:20px;margin-bottom:16px;">Why Volunteer?</h3>
+        <h3 data-cms="volunteer_h2" style="color:var(--chalk);font-size:20px;margin-bottom:16px;">Why Volunteer?</h3>
         <div style="display:flex;flex-direction:column;gap:16px;">
-          <p style="font-size:15px;opacity:0.55;color:var(--chalk);">Volunteering with The Pitch means being part of something that matters. You'll help young athletes grow &#8212; not just as players, but as people. Whether you've got coaching experience or just a passion for the game, there's a place for you here.</p>
+          <p data-cms="volunteer_p2" style="font-size:15px;opacity:0.55;color:var(--chalk);">Volunteering with The Pitch means being part of something that matters. You'll help young athletes grow &#8212; not just as players, but as people. Whether you've got coaching experience or just a passion for the game, there's a place for you here.</p>
           <div style="height:1px;background:rgba(242,239,230,0.08);"></div>
           <div style="font-family:'Barlow Condensed';font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:0.1em;color:var(--lime);opacity:0.7;">We're stronger together.</div>
         </div>
@@ -1120,7 +1120,7 @@ p { font-size:17px; line-height:1.75; font-weight:300; }
         <img data-cms-src="img_logo" src="/images/logo.png" alt="" style="width:40px;height:40px;object-fit:contain;opacity:1;filter:brightness(10);">
         <span style="font-family:'Barlow Condensed';font-weight:800;font-size:22px;text-transform:uppercase;letter-spacing:0.08em;color:var(--chalk);">The Pitch</span>
       </div>
-      <p style="font-size:14px;opacity:0.35;max-width:280px;line-height:1.7;">Toronto's Soccer Sanctuary. Building the love for the game, building the future, building community.</p>
+      <p data-cms="volunteer_p3" style="font-size:14px;opacity:0.35;max-width:280px;line-height:1.7;">Toronto's Soccer Sanctuary. Building the love for the game, building the future, building community.</p>
       <a href="mailto:play@thepitchtoronto.com" style="font-size:14px;opacity:1;text-decoration:none;color:var(--lime);transition:opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">play@thepitchtoronto.com</a>
     </div>
     <div>
@@ -1650,19 +1650,36 @@ loadRunSpots();
 /* Sveltia CMS content loader: overrides tagged elements from /content/site.json.
    If the file is missing or fails to load, the hardcoded page content stays. */
 (function(){
+  function go(c){
+    document.querySelectorAll('[data-cms]').forEach(function(el){
+      var v=c[el.getAttribute('data-cms')];
+      if(v!=null&&v!=='')el.textContent=v;
+    });
+    document.querySelectorAll('[data-cms-src]').forEach(function(el){
+      var v=c[el.getAttribute('data-cms-src')];
+      if(v!=null&&v!=='')el.setAttribute('src',v);
+    });
+    document.querySelectorAll('[data-cms-btn-label]').forEach(function(el){
+      var v=c[el.getAttribute('data-cms-btn-label')];
+      if(v!=null&&v!=='')el.textContent=v;
+    });
+    document.querySelectorAll('[data-cms-btn-link]').forEach(function(el){
+      var v=c[el.getAttribute('data-cms-btn-link')];
+      if(v==null||v==='')return;
+      el.removeAttribute('onclick'); el.onclick=null;
+      el.addEventListener('click',function(e){
+        e.preventDefault();
+        if(v.indexOf('page:')===0){ if(window.showPage)window.showPage(v.slice(5)); }
+        else if(v.indexOf('scroll:')===0){ var t=document.getElementById(v.slice(7)); if(t)t.scrollIntoView({behavior:'smooth',block:'start'}); }
+        else if(v.indexOf('http')===0){ window.open(v,'_blank'); }
+        else if(v.indexOf('mailto:')===0){ window.location.href=v; }
+        else if(v.indexOf('#')===0){ var t2=document.getElementById(v.slice(1)); if(t2)t2.scrollIntoView({behavior:'smooth',block:'start'}); }
+      });
+    });
+  }
   fetch('/content/site.json',{cache:'no-store'})
     .then(function(r){return r.ok?r.json():null;})
-    .then(function(c){
-      if(!c)return;
-      document.querySelectorAll('[data-cms]').forEach(function(el){
-        var k=el.getAttribute('data-cms');
-        if(c[k]!=null&&c[k]!=='')el.textContent=c[k];
-      });
-      document.querySelectorAll('[data-cms-src]').forEach(function(el){
-        var k=el.getAttribute('data-cms-src');
-        if(c[k]!=null&&c[k]!=='')el.setAttribute('src',c[k]);
-      });
-    })
+    .then(function(c){if(c)go(c);})
     .catch(function(){});
 })();
 </script>

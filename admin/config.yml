@@ -3,31 +3,389 @@ backend:
   repo: rmonga2000/ThePitchToronto
   branch: main
   base_url: https://sveltia-cms-auth.rmonga2000.workers.dev
-
-# Where the CMS stores and looks for image files in the repo.
-media_folder: "images"
-public_folder: "/images"
-
+media_folder: images
+public_folder: /images
 collections:
-  - name: "site"
-    label: "Site Content"
-    files:
-      - name: "content"
-        label: "Editable Content"
-        file: "content/site.json"
-        description: "Text and images you can change yourself. Anything not listed here is still managed in the page code."
-        fields:
-          - { label: "Home - Hero eyebrow", name: "home_hero_eyebrow", widget: "string" }
-          - { label: "Home - Hero subtext", name: "home_hero_subtext", widget: "text" }
-          - { label: "Wednesday Run - Hero subtext", name: "run_hero_subtext", widget: "text" }
-          - { label: "Wednesday Run - Day", name: "run_day", widget: "string" }
-          - { label: "Wednesday Run - Time", name: "run_time", widget: "string" }
-          - { label: "Wednesday Run - Season note", name: "run_first_note", widget: "string" }
-          - { label: "Logo", name: "img_logo", widget: "image" }
-          - { label: "Home hero image", name: "img_home_hero", widget: "image" }
-          - { label: "Feature action photo", name: "img_feature_action", widget: "image" }
-          - { label: "Metrogolf Sportsplex photo", name: "img_metrogolf", widget: "image" }
-          - { label: "Summer clinic photo", name: "img_summer_clinic", widget: "image" }
-          - { label: "Home CTA background", name: "img_cta_bg", widget: "image" }
-          - { label: "Founder photo", name: "img_founder", widget: "image" }
-          - { label: "Register page photo", name: "img_register", widget: "image" }
+- name: site
+  label: Site Content
+  files:
+  - name: content
+    label: Editable Content
+    file: content/site.json
+    description: Text, buttons and images you can change yourself, grouped by page. For button links use page:home / page:about / page:register / page:sponsors / page:summer2026 / page:contact / page:volunteer for internal pages, a full https:// link for external, or scroll:run-signup to jump to a section.
+    fields:
+    - label: Home - Hero eyebrow
+      name: home_hero_eyebrow
+      widget: string
+    - label: Home - Hero subtext
+      name: home_hero_subtext
+      widget: text
+    - label: 'Home - Heading: What to expect.'
+      name: home_h1
+      widget: string
+    - label: 'Home - Heading: Ready to play?'
+      name: home_h2
+      widget: string
+    - label: 'Home - Heading: Check In'
+      name: home_h3
+      widget: string
+    - label: 'Home - Heading: Warm-Up & Drills'
+      name: home_h4
+      widget: string
+    - label: 'Home - Heading: Gametime'
+      name: home_h5
+      widget: string
+    - label: 'Home - Heading: Cool Down'
+      name: home_h6
+      widget: string
+    - label: 'Home - Text: An open run for ballers 18 and up, every W…'
+      name: home_p1
+      widget: text
+    - label: 'Home - Text: 30 spots. 6 weeks. Free. Registration is o…'
+      name: home_p10
+      widget: text
+    - label: 'Home - Text: A structured, high-quality 6-week soccer c…'
+      name: home_p2
+      widget: text
+    - label: 'Home - Text: Every session is structured for growth. He…'
+      name: home_p3
+      widget: text
+    - label: 'Home - Text: Arrive, gear up, check in with coach.'
+      name: home_p4
+      widget: text
+    - label: 'Home - Text: Get loose, touch the ball, and sharpen you…'
+      name: home_p5
+      widget: text
+    - label: 'Home - Text: Time to put what you''ve learnt to the test…'
+      name: home_p6
+      widget: text
+    - label: 'Home - Text: Recap, feedback, and community. We close e…'
+      name: home_p7
+      widget: text
+    - label: 'Home - Text: Our home base in Scarborough. Indoor turf,…'
+      name: home_p8
+      widget: text
+    - label: 'Home - Text: Coming Soon.'
+      name: home_p9
+      widget: text
+    - label: 'Home - Button label: Join the Wednesday Run'
+      name: home_btn1_label
+      widget: string
+    - label: 'Home - Button label: Youth Programs'
+      name: home_btn2_label
+      widget: string
+    - label: 'Home - Button label: Reserve Your Spot'
+      name: home_btn3_label
+      widget: string
+    - label: 'Home - Button label: Register Your Spot'
+      name: home_btn4_label
+      widget: string
+    - label: 'Home - Button label: Learn More'
+      name: home_btn5_label
+      widget: string
+    - label: 'Home - Button label: Register Now'
+      name: home_btn6_label
+      widget: string
+    - label: 'Home - Button link: Join the Wednesday Run -> page:wednesdayrun'
+      name: home_btn1_link
+      widget: string
+    - label: 'Home - Button link: Youth Programs -> page:summer2026'
+      name: home_btn2_link
+      widget: string
+    - label: 'Home - Button link: Reserve Your Spot -> page:wednesdayrun'
+      name: home_btn3_link
+      widget: string
+    - label: 'Home - Button link: Register Your Spot -> page:register'
+      name: home_btn4_link
+      widget: string
+    - label: 'Home - Button link: Learn More -> https://leagues.teamlinkt.com/thepitchtoronto'
+      name: home_btn5_link
+      widget: string
+    - label: 'Home - Button link: Register Now -> page:register'
+      name: home_btn6_link
+      widget: string
+    - label: Wednesday Run - Hero subtext
+      name: run_hero_subtext
+      widget: text
+    - label: Wednesday Run - Day
+      name: run_day
+      widget: string
+    - label: Wednesday Run - Time
+      name: run_time
+      widget: string
+    - label: Wednesday Run - Season note
+      name: run_first_note
+      widget: string
+    - label: 'Wednesday Run - Heading: Claim a spot on the run.'
+      name: run_h1
+      widget: string
+    - label: 'Wednesday Run - Heading: Pull Up'
+      name: run_h2
+      widget: string
+    - label: 'Wednesday Run - Heading: Run It'
+      name: run_h3
+      widget: string
+    - label: 'Wednesday Run - Heading: Link Up'
+      name: run_h4
+      widget: string
+    - label: 'Wednesday Run - Text: Reserve your spot, then roll through. Chec…'
+      name: run_p1
+      widget: text
+    - label: 'Wednesday Run - Text: Small-sided games, balanced teams, real ru…'
+      name: run_p2
+      widget: text
+    - label: 'Wednesday Run - Text: Meet the regulars, build your circle, and …'
+      name: run_p3
+      widget: text
+    - label: 'Wednesday Run - Text: 30 spots only. Drop your details below and…'
+      name: run_p4
+      widget: text
+    - label: 'Wednesday Run - Text: We''ll only use your info to confirm your s…'
+      name: run_p5
+      widget: text
+    - label: 'Wednesday Run - Button label: Reserve Your Spot'
+      name: run_btn1_label
+      widget: string
+    - label: 'Wednesday Run - Button label: Reserve My Spot'
+      name: run_btn2_label
+      widget: string
+    - label: 'Wednesday Run - Button label: Home'
+      name: run_btn3_label
+      widget: string
+    - label: 'Wednesday Run - Button label: Youth Programs'
+      name: run_btn4_label
+      widget: string
+    - label: 'Wednesday Run - Button label: Contact'
+      name: run_btn5_label
+      widget: string
+    - label: 'Wednesday Run - Button link: Reserve Your Spot -> scroll:run-signup'
+      name: run_btn1_link
+      widget: string
+    - label: 'Wednesday Run - Button link: Home -> page:home'
+      name: run_btn3_link
+      widget: string
+    - label: 'Wednesday Run - Button link: Youth Programs -> page:summer2026'
+      name: run_btn4_link
+      widget: string
+    - label: 'Wednesday Run - Button link: Contact -> page:contact'
+      name: run_btn5_link
+      widget: string
+    - label: 'About - Heading: Excellence'
+      name: about_h1
+      widget: string
+    - label: 'About - Heading: Community'
+      name: about_h2
+      widget: string
+    - label: 'About - Heading: Innovation'
+      name: about_h3
+      widget: string
+    - label: 'About - Heading: Recognition'
+      name: about_h4
+      widget: string
+    - label: 'About - Text: The Pitch is Toronto''s next big soccer pla…'
+      name: about_p1
+      widget: text
+    - label: 'About - Text: Our goal is to grow the love of the game a…'
+      name: about_p10
+      widget: text
+    - label: 'About - Text: At the end of the day, this is about commu…'
+      name: about_p11
+      widget: text
+    - label: 'About - Text: See you on the pitch!'
+      name: about_p12
+      widget: text
+    - label: 'About - Text: — Raghav Monga'
+      name: about_p13
+      widget: text
+    - label: 'About - Text: The Pitch is growing, and we need people w…'
+      name: about_p14
+      widget: text
+    - label: 'About - Text: Elevating the standard of soccer in Toront…'
+      name: about_p2
+      widget: text
+    - label: 'About - Text: To become Toronto''s leading soccer organiz…'
+      name: about_p3
+      widget: text
+    - label: 'About - Text: No shortcuts. Every session, every match, …'
+      name: about_p4
+      widget: text
+    - label: 'About - Text: Rooted in Scarborough. Every program is bu…'
+      name: about_p5
+      widget: text
+    - label: 'About - Text: Modern training, fresh structure, new oppo…'
+      name: about_p6
+      widget: text
+    - label: 'About - Text: Every player deserves to be seen. The Pitc…'
+      name: about_p7
+      widget: text
+    - label: 'About - Text: Growing up in Scarborough, I saw firsthand…'
+      name: about_p8
+      widget: text
+    - label: 'About - Text: The Pitch is built by players, for players…'
+      name: about_p9
+      widget: text
+    - label: 'About - Button label: Sign Up to Volunteer'
+      name: about_btn1_label
+      widget: string
+    - label: 'About - Button link: Sign Up to Volunteer -> page:volunteer'
+      name: about_btn1_link
+      widget: string
+    - label: 'Register - Heading: Program Details'
+      name: register_h1
+      widget: string
+    - label: 'Register - Text: 30 spots available for our free Summer 202…'
+      name: register_p1
+      widget: text
+    - label: 'Register - Button label: Submit Registration'
+      name: register_btn1_label
+      widget: string
+    - label: 'Contact - Heading: Send us a message'
+      name: contact_h1
+      widget: string
+    - label: 'Contact - Heading: Find us'
+      name: contact_h2
+      widget: string
+    - label: 'Contact - Button label: Send Message'
+      name: contact_btn1_label
+      widget: string
+    - label: 'Sponsors - Heading: Youth Reached'
+      name: sponsors_h1
+      widget: string
+    - label: 'Sponsors - Heading: Weeks of Exposure'
+      name: sponsors_h2
+      widget: string
+    - label: 'Sponsors - Heading: Community Impact'
+      name: sponsors_h3
+      widget: string
+    - label: 'Sponsors - Heading: Bronze'
+      name: sponsors_h4
+      widget: string
+    - label: 'Sponsors - Heading: Silver'
+      name: sponsors_h5
+      widget: string
+    - label: 'Sponsors - Heading: Gold'
+      name: sponsors_h6
+      widget: string
+    - label: 'Sponsors - Text: Align your brand with Toronto''s growing so…'
+      name: sponsors_p1
+      widget: text
+    - label: 'Sponsors - Text: Direct exposure to families and young athl…'
+      name: sponsors_p2
+      widget: text
+    - label: 'Sponsors - Text: Your brand on display at every session, ev…'
+      name: sponsors_p3
+      widget: text
+    - label: 'Sponsors - Text: Be part of something real. Your support di…'
+      name: sponsors_p4
+      widget: text
+    - label: 'Sponsors - Text: Whether you''re a local business, a nationa…'
+      name: sponsors_p5
+      widget: text
+    - label: 'Sponsors - Button label: Submit Inquiry'
+      name: sponsors_btn1_label
+      widget: string
+    - label: 'Summer 2026 - Heading: Don''t miss out.'
+      name: summer_h1
+      widget: string
+    - label: 'Summer 2026 - Heading: Program Details'
+      name: summer_h2
+      widget: string
+    - label: 'Summer 2026 - Heading: Build Confidence'
+      name: summer_h3
+      widget: string
+    - label: 'Summer 2026 - Heading: Stay Active'
+      name: summer_h4
+      widget: string
+    - label: 'Summer 2026 - Heading: Find Your People'
+      name: summer_h5
+      widget: string
+    - label: 'Summer 2026 - Text: The Pitch Summer 2026 Clinic is a free 6-w…'
+      name: summer_p1
+      widget: text
+    - label: 'Summer 2026 - Text: Playing sports changes lives. It builds co…'
+      name: summer_p2
+      widget: text
+    - label: 'Summer 2026 - Text: This isn''t just a clinic. It''s a place to …'
+      name: summer_p3
+      widget: text
+    - label: 'Summer 2026 - Text: Step on the field, challenge yourself, and…'
+      name: summer_p4
+      widget: text
+    - label: 'Summer 2026 - Text: An hour of real training and match play ev…'
+      name: summer_p5
+      widget: text
+    - label: 'Summer 2026 - Text: The best friendships are made on the pitch…'
+      name: summer_p6
+      widget: text
+    - label: 'Summer 2026 - Text: Only 30 spots available. Registration is o…'
+      name: summer_p7
+      widget: text
+    - label: 'Summer 2026 - Button label: Register Now — It''s Free'
+      name: summer_btn1_label
+      widget: string
+    - label: 'Summer 2026 - Button label: Register Now'
+      name: summer_btn2_label
+      widget: string
+    - label: 'Summer 2026 - Button link: Register Now — It''s Free -> page:register'
+      name: summer_btn1_link
+      widget: string
+    - label: 'Summer 2026 - Button link: Register Now -> page:register'
+      name: summer_btn2_link
+      widget: string
+    - label: 'Leagues - Text: A competitive soccer league built in Toron…'
+      name: leagues_p1
+      widget: text
+    - label: 'Leagues - Text: Drop your info below and we''ll let you kno…'
+      name: leagues_p2
+      widget: text
+    - label: 'Leagues - Text: We''ll never spam you. Just the good stuff.'
+      name: leagues_p3
+      widget: text
+    - label: 'Leagues - Button label: Be the First to Know'
+      name: leagues_btn1_label
+      widget: string
+    - label: 'Leagues - Button label: Subscribe for Updates'
+      name: leagues_btn2_label
+      widget: string
+    - label: 'Volunteer - Heading: Tell us about yourself'
+      name: volunteer_h1
+      widget: string
+    - label: 'Volunteer - Heading: Why Volunteer?'
+      name: volunteer_h2
+      widget: string
+    - label: 'Volunteer - Text: Love the game and want to give back? We''re…'
+      name: volunteer_p1
+      widget: text
+    - label: 'Volunteer - Text: Volunteering with The Pitch means being pa…'
+      name: volunteer_p2
+      widget: text
+    - label: 'Volunteer - Text: Toronto''s Soccer Sanctuary. Building the l…'
+      name: volunteer_p3
+      widget: text
+    - label: 'Volunteer - Button label: Submit Application'
+      name: volunteer_btn1_label
+      widget: string
+    - label: Image - Logo
+      name: img_logo
+      widget: image
+    - label: Image - Home hero image
+      name: img_home_hero
+      widget: image
+    - label: Image - Feature action photo
+      name: img_feature_action
+      widget: image
+    - label: Image - Metrogolf Sportsplex photo
+      name: img_metrogolf
+      widget: image
+    - label: Image - Summer clinic photo
+      name: img_summer_clinic
+      widget: image
+    - label: Image - Home CTA background
+      name: img_cta_bg
+      widget: image
+    - label: Image - Founder photo
+      name: img_founder
+      widget: image
+    - label: Image - Register page photo
+      name: img_register
+      widget: image
