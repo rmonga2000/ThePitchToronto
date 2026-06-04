@@ -1,0 +1,33 @@
+backend:
+  name: github
+  repo: rmonga2000/ThePitchToronto
+  branch: main
+  base_url: https://sveltia-cms-auth.rmonga2000.workers.dev
+
+# Where the CMS stores and looks for image files in the repo.
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "site"
+    label: "Site Content"
+    files:
+      - name: "content"
+        label: "Editable Content"
+        file: "content/site.json"
+        description: "Text and images you can change yourself. Anything not listed here is still managed in the page code."
+        fields:
+          - { label: "Home - Hero eyebrow", name: "home_hero_eyebrow", widget: "string" }
+          - { label: "Home - Hero subtext", name: "home_hero_subtext", widget: "text" }
+          - { label: "Wednesday Run - Hero subtext", name: "run_hero_subtext", widget: "text" }
+          - { label: "Wednesday Run - Day", name: "run_day", widget: "string" }
+          - { label: "Wednesday Run - Time", name: "run_time", widget: "string" }
+          - { label: "Wednesday Run - Season note", name: "run_first_note", widget: "string" }
+          - { label: "Logo", name: "img_logo", widget: "image" }
+          - { label: "Home hero image", name: "img_home_hero", widget: "image" }
+          - { label: "Feature action photo", name: "img_feature_action", widget: "image" }
+          - { label: "Metrogolf Sportsplex photo", name: "img_metrogolf", widget: "image" }
+          - { label: "Summer clinic photo", name: "img_summer_clinic", widget: "image" }
+          - { label: "Home CTA background", name: "img_cta_bg", widget: "image" }
+          - { label: "Founder photo", name: "img_founder", widget: "image" }
+          - { label: "Register page photo", name: "img_register", widget: "image" }
